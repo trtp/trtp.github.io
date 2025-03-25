@@ -1,0 +1,97 @@
+/* 全局样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 页面整体布局 */
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部样式 */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 链接按钮 */
+.links {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.links .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.github { background: #333; }
+.paper { background: #2196F3; }
+.demo { background: #FF9800; }
+
+.links .btn:hover {
+    opacity: 0.8;
+}
+
+/* 图片展示 */
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.demo-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* 引用信息 */
+.citation {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+    text-align: left;
+    overflow: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
