@@ -10,7 +10,7 @@
 <body>
 
 <header>
-    <h1>📄 Paper Title: <i>Awesome Vision Model</i></h1>
+    <h1>Paper Title: <i>Awesome Vision Model</i></h1>
     <p>Authors: <a href="#">Author1</a>, <a href="#">Author2</a>, <a href="#">Author3</a></p>
 </header>
 
@@ -20,9 +20,9 @@
     <a href="https://demo-link.com" target="_blank" class="btn demo">🚀 Demo</a>
 </section>
 
-<!-- 添加机器人GIF展示区 -->
+<!-- 机器人GIF展示区 -->
 <section class="robots">
-    <h2>🤖 Robot Demonstrations</h2>
+    <h2>Robot Demonstrations</h2>
     <div class="robot-gallery">
         <img src="assets/Collect a ping pong ball into the red zone.gif" alt="Robot 1" class="robot-gif">
         <img src="assets/Open drawer and pick a box.gif" alt="Robot 2" class="robot-gif">
@@ -33,27 +33,59 @@
     </div>
 </section>
 
+<!-- 模块化介绍 -->
+<section class="modules">
+    <h2>Framework Modules</h2>
+    <div class="module">
+        <h3>1. Spatial Relation Extraction</h3>
+        <p>We extract structured spatial prompts (e.g., "Bottle is to the right of the table") from static scene images using multiple VLMs, performing cross-scoring to ensure consistency and accuracy. This provides semantic priors for downstream task planning.</p>
+    </div>
+
+    <div class="module">
+        <h3>2. Multi-Modal Task Sequence Generation</h3>
+        <p>Combining spatial prompts and dynamic videos, we use a diverse set of vision-language models to generate task sequences. Outputs are filtered by vision consistency, temporal logic, and physical feasibility scores, building a high-quality dataset to fine-tune the main model.</p>
+    </div>
+
+    <div class="module">
+        <h3>3. Digital Twin Simulation & Error Prompting</h3>
+        <p>Planned task sequences are simulated in a virtual twin environment before real execution. Errors like unreachable actions or collisions are detected, and structured Error Prompts are generated for closed-loop replanning.</p>
+    </div>
+
+    <div class="module">
+        <h3>4. Self-Correcting Replanning Mechanism</h3>
+        <p>The model receives the original spatial prompts, task videos, and error feedback to reconstruct context and fix causal inconsistencies, iteratively refining task plans until successful validation.</p>
+    </div>
+</section>
+
+<!-- 结果展示 -->
 <section class="content">
-    <h2>📊 Results</h2>
+    <h2>Results</h2>
     <img src="assets/demo.png" alt="Demo Image" class="demo-img">
     <p>Our model achieves state-of-the-art performance on XYZ dataset, with 92.1% mAP.</p>
 </section>
 
-<section class="citation">
-    <h2>📚 Citation</h2>
-    <pre>
-@article{author2025,
-  title={Awesome Vision Model},
-  author={Author1, Author2, Author3},
-  journal={CVPR},
-  year={2025}
-}
-    </pre>
+<!-- 错误演示区 -->
+<section class="failures">
+    <h2>Failure Case Demonstrations</h2>
+    <p>Our system detects and corrects typical failures via digital twin simulation and error prompts.</p>
+    <div class="failure-gallery">
+        <div class="failure-item">
+            <img src="assets/failure_occlusion.gif" alt="Failure: Occlusion" class="failure-gif">
+            <p>Failure: Target Occluded</p>
+        </div>
+        <div class="failure-item">
+            <img src="assets/failure_order.gif" alt="Failure: Wrong Action Order" class="failure-gif">
+            <p>Failure: Wrong Action Sequence</p>
+        </div>
+        <div class="failure-item">
+            <img src="assets/failure_collision.gif" alt="Failure: Collision" class="failure-gif">
+            <p>Failure: Collision Detected</p>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <p>© 2025 Your Name. Powered by GitHub Pages.</p>
-</footer>
+
+
 
 </body>
 </html>
